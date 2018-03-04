@@ -21,7 +21,7 @@
   - `.align-x-start` 左对齐
   - `.align-x-end` 右对齐
   - `.align-x-center` 水平中间对齐
-  - `.align-x-stretch` 水平两边对齐
+  - `.align-x-stretch` 水平两边对齐
   
 3. 给小明加以下属性来调整间距（只在相应的对齐方式下生效）
   - `--l: 2rem` 左边距离为 2rem
