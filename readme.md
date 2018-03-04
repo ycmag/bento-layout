@@ -17,11 +17,11 @@
   <小明>
 ````
 
-2. 给小明自己加以下 class 以达到预期效果（以 x 轴为例，y 轴同理）
+2. 给小明自己加以下 class 中的任意一个以达到预期效果（这是 x 轴的，y 轴同理）
   - `.align-x-start` 左对齐
   - `.align-x-end` 右对齐
-  - `.align-x-center` 中间对齐
-  - `.align-x-stretch` 两边对齐
+  - `.align-x-center` 水平中间对齐
+  - `.align-x-stretch` 水平两边对齐
   
 3. 给小明加以下属性来调整间距（只在相应的对齐方式下生效）
   - `--l: 2rem` 左边距离为 2rem
