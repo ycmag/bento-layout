@@ -5,7 +5,7 @@
 假如要让一个叫小明的 dom 和父元素对齐：
 
 1. 给小明的父元素加 .box
-2. 给小明自己加以下 class 以达到预期效果
+2. 给小明自己加以下 class 以达到预期效果（以 x 轴为例，y 轴同理）
   - `.align-x-start` 左对齐
   - `.align-x-end` 右对齐
   - `.align-x-center` 中间对齐
