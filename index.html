@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="reset">
   <head>
     <title>Bento Layout</title>
     <link rel="stylesheet" href="style/bento.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   </head>
-  <body class="box">
-    <div style="--w: 50%; background: red;" class="box align-x-start align-y-stretch">
-      <div style="--l: 2rem; --t: 2rem; --r: 2rem; --b: 2rem; background: white;" class="box align-x-stretch align-y-stretch">
-        <div style="--w: 12rem; --h: 6rem; background: yellow; opacity: 0.7" class="box align-x-center align-y-center"></div>
-        <div style="--w: 2rem; --h: 12rem; background: pink; opacity: 0.7" class="box align-x-center align-y-center"></div>
+  <body class="layer layout-off debug">
+    <div style="--w: 50%; background: red;" class="layer layout-off align-x-start align-y-stretch">
+      <div style="--l: 2rem; --t: 2rem; --r: 2rem; --b: 2rem; background: white;" class="layer layout-off align-x-stretch align-y-stretch">
+        <div style="--w: 12rem; --h: 6rem; background: yellow; opacity: 0.7" class="layer layout-off align-x-center align-y-center"></div>
+        <div style="--w: 2rem; --h: 12rem; background: pink; opacity: 0.7" class="layer layout-off align-x-center align-y-center"></div>
       </div>
     </div>
-    <div style="--w: 50%; --gap: 1rem; background: green;" class="box y align-x-end align-y-stretch"></div>
+    <div style="--w: 50%; --gap: 1rem; background: green;" class="layer layout-flow x gap-l align-x-end align-y-stretch">
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer">xixi1</div>
+      <div class="layer align-start">xixi2</div>
+      <div class="layer align-center">xixi3</div>
+      <div class="layer fit-space">xixi4</div>
+      <div class="layer">xixi5</div>
+    </div>
   </body>
 </html>
