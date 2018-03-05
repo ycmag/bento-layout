@@ -45,7 +45,7 @@
 
 会了吗？
 
-### layout stack
+### Layout Stack
 
 这个就是把一群小明排成一列
 
@@ -89,7 +89,7 @@
 
 会了吗？
 
-### layout flow
+### Layout Flow
 
 这个就是把一群小明当做文字一样排成多行。
 
