@@ -27,57 +27,6 @@ body {
   --s7p: calc(var(--s7) * 1.5);
   --s8: calc(var(--s7) * 2);
   --s8p: calc(var(--s8) * 1.5);
-  --white: #fff;
-  --primary: #357edd;
-  --primary-light: #96ccff;
-  --primary-washed: #ebf6fa;
-  --primary-dark: #005bd1;
-  --black: #000;
-  --black-75: rgba(0,0,0,0.75);
-  --black-50: rgba(0,0,0,0.5);
-  --black-10: rgba(0,0,0,0.1);
-  --black-5: rgba(0,0,0,0.05);
-}
-.ff-sans {
-  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-}
-.ff-serif {
-  font-family: georgia, times, serif;
-}
-.ff-code {
-  font-family: Consolas, monaco, monospace;
-}
-.fz-h5 {
-  font-size: var(--s2p);
-  line-height: var(--s3);
-}
-.fz-normal {
-  font-size: var(--s2);
-  line-height: var(--s2p);
-}
-.fc-normal {
-  color: var(--black-75);
-}
-.fc-sub {
-  color: var(--black-50);
-}
-.radius-0 {
-  border-radius: 0px;
-}
-.radius-s {
-  border-radius: 3px;
-}
-.radius-pill {
-  border-radius: 9999rem;
-}
-.radius-oval {
-  border-radius: 100%;
-}
-.border-normal {
-  box-shadow: inset 0px 0px 0px 1px var(--black-75);
-}
-.border-sub {
-  box-shadow: inset 0px 0px 0px 1px var(--black-10);
 }
 .layer {
   --l: 0rem;
@@ -86,6 +35,21 @@ body {
   --b: 0rem;
   --w: 4rem;
   --h: 4rem;
+}
+.layer.scroll {
+  overflow: auto;
+}
+.layer.scroll-x {
+  overflow-x: auto;
+}
+.layer.scroll-y {
+  overflow-y: auto;
+}
+.layer.clip {
+  overflow: hidden;
+}
+.layer.sticky {
+  position: sticky;
 }
 .layer.layout-off>.layer {
   position: absolute;
@@ -130,9 +94,11 @@ body {
   align-content: flex-start;
 }
 .layer.layout-stack>.layer {
-  position: relative;
   flex-grow: 0;
   flex-shrink: 0;
+}
+.layer.layout-stack>.layer:not(.sticky) {
+  position: relative;
 }
 .layer.layout-stack.x {
   flex-direction: row;
@@ -237,9 +203,11 @@ body {
   align-content: flex-start;
 }
 .layer.layout-flow>.layer {
-  position: relative;
   flex-grow: 0;
   flex-shrink: 0;
+}
+.layer.layout-flow>.layer:not(.sticky) {
+  position: relative;
 }
 .layer.layout-flow.x {
   flex-direction: row;
