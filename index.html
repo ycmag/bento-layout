@@ -5,40 +5,63 @@
     <link rel="stylesheet" href="style/bento.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   </head>
-  <body class="layer layout-off debug">
-    <div style="--w: 25%;" class="layer layout-off align-x-start align-y-stretch">
-      <div style="--l: 2rem; --t: 2rem; --r: 2rem; --b: 2rem;" class="layer layout-off align-x-stretch align-y-stretch">
-        <div style="--w: 12rem; --h: 6rem;" class="layer layout-off align-x-center align-y-center"></div>
-        <div style="--w: 2rem; --h: 12rem;" class="layer layout-off align-x-center align-y-center"></div>
+  <body class="layer layout-stack y debug-all">
+    <div style="height: 6rem" class="layer layout-stack x items-main-between">
+      <div class="layer">123</div>
+      <div class="layer fit-space">123</div>
+      <div class="layer">123</div>
+      <div class="layer">123</div>
+    </div>
+    <div style="" class="layer fit-space layout-stack x">
+      <div style="width: 25%" class="layer layout-off">
+        <div style="--l: 2rem; --t: 2rem; --r: 2rem; --b: 2rem;" class="layer layout-off align-x-stretch align-y-stretch">
+          <div style="--w: 12rem; --h: 6rem;" class="layer layout-off align-x-center align-y-center"></div>
+          <div style="--w: 2rem; --h: 12rem;" class="layer layout-off align-x-center align-y-center"></div>
+        </div>
       </div>
-    </div>
-    <div style="--w: 25%;" class="layer layout-flow x gap-m align-x-end align-y-stretch">
-      <div style="padding: 1rem" class="layer">aaaaaaa</div>
-      <div style="padding: 1rem" class="layer">bbbbbbb</div>
-      <div style="padding: 1rem" class="layer">ccccccc</div>
-      <div style="padding: 1rem" class="layer">ddddddd</div>
-      <div style="padding: 1rem" class="layer">eeeeeee</div>
-      <div style="padding: 1rem" class="layer">fffffff</div>
-      <div style="padding: 1rem" class="layer">ggggggg</div>
-      <div style="padding: 1rem" class="layer align-start">hhhhhhh</div>
-      <div style="padding: 1rem" class="layer align-center">iiiiiii</div>
-      <div style="padding: 1rem" class="layer fit-space">jjjjjj</div>
-      <div style="padding: 1rem" class="layer">kkkkkkkk</div>
-    </div>
-    <div style="--w: 40%;--h:40%" class="layer layout-stack y align-x-center align-y-center scroll-y">
-      <div style="padding: 2rem" class="layer">scroll up ↑</div>
-      <div style="padding: 2rem" class="layer">aaaaaaa</div>
-      <div style="padding: 2rem" class="layer">bbbbbbb</div>
-      <div style="padding: 2rem; top: 0rem;" class="layer sticky">I'm sticky!!!</div>
-      <div style="padding: 2rem" class="layer">ccccccc</div>
-      <div style="padding: 2rem" class="layer">ddddddd</div>
-      <div style="padding: 2rem" class="layer">eeeeeee</div>
-      <div style="padding: 2rem" class="layer">ddddddd</div>
-      <div style="padding: 2rem" class="layer">eeeeeee</div>
-      <div style="padding: 2rem" class="layer">ddddddd</div>
-      <div style="padding: 2rem" class="layer">eeeeeee</div>
-      <div style="padding: 2rem" class="layer">ddddddd</div>
-      <div style="padding: 2rem" class="layer">eeeeeee</div>
+      <div style="width: 25%" class="layer layout-flow x gap-m">
+        <div style="padding: 1rem" class="layer">aaaaaaa</div>
+        <div style="padding: 1rem" class="layer">bbbbbbb</div>
+        <div style="padding: 1rem" class="layer">ccccccc</div>
+        <div style="padding: 1rem" class="layer">ddddddd</div>
+        <div style="padding: 1rem" class="layer">eeeeeee</div>
+        <div style="padding: 1rem" class="layer">fffffff</div>
+        <div style="padding: 1rem" class="layer fit-space">ggggggg</div>
+        <div style="padding: 1rem" class="layer">hhhhhhh</div>
+        <div style="padding: 1rem" class="layer">iiiiiii</div>
+        <div style="padding: 1rem" class="layer">jjjjjj</div>
+        <div style="padding: 1rem" class="layer">kkkkkkkk</div>
+      </div>
+      <div style="width: 25%" class="layer layout-stack y scroll-y">
+        <div style="padding: 2rem" class="layer">scroll up ↑</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem; top: 0rem; background: pink;" class="layer sticky">I'm sticky!!!</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">-------</div>
+        <div style="padding: 2rem" class="layer">end</div>
+      </div>
+      <div style="width: 25%" class="layer layout-gridflow col-4 gap-m">
+        <div class="layer">grid-item 1</div>
+        <div class="layer">grid-item 2</div>
+        <div class="layer">grid-item 3</div>
+        <div class="layer">grid-item 4</div>
+        <div class="layer">grid-item 5</div>
+        <div class="layer">grid-item 6</div>
+        <div class="layer">grid-item 7</div>
+        <div class="layer">grid-item 8</div>
+        <div class="layer">grid-item 9</div>
+        <div class="layer">grid-item 10</div>
+      </div>
     </div>
   </body>
 </html>

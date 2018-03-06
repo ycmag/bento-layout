@@ -293,8 +293,81 @@ body {
 .layer.layout-flow>.layer.align-stretch {
   align-self: stretch;
 }
+.layer.layout-gridflow {
+  display: inline-grid;
+  grid-template-columns: repeat(var(--gridflow-col), 1fr);
+}
+.layer.layout-gridflow>.layer {
+  position: relative;
+}
+.layer.layout-gridflow.col-1 {
+  --gridflow-col: 1;
+}
+.layer.layout-gridflow.col-2 {
+  --gridflow-col: 2;
+}
+.layer.layout-gridflow.col-3 {
+  --gridflow-col: 3;
+}
+.layer.layout-gridflow.col-4 {
+  --gridflow-col: 4;
+}
+.layer.layout-gridflow.col-5 {
+  --gridflow-col: 5;
+}
+.layer.layout-gridflow.col-6 {
+  --gridflow-col: 6;
+}
+.layer.layout-gridflow.gap-s {
+  grid-gap: var(--s1);
+}
+.layer.layout-gridflow.gap-m {
+  grid-gap: var(--s2);
+}
+.layer.layout-gridflow.gap-l {
+  grid-gap: var(--s3);
+}
+.p-s {
+  padding: var(--s1);
+}
+.p-m {
+  padding: var(--s2);
+}
+.p-l {
+  padding: var(--s3);
+}
+.p-s-x {
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+}
+.p-m-x {
+  padding-left: var(--s2);
+  padding-right: var(--s2);
+}
+.p-l-x {
+  padding-left: var(--s3);
+  padding-right: var(--s3);
+}
+.p-s-y {
+  padding-top: var(--s1);
+  padding-bottom: var(--s1);
+}
+.p-m-y {
+  padding-top: var(--s2);
+  padding-bottom: var(--s2);
+}
+.p-l-y {
+  padding-top: var(--s3);
+  padding-bottom: var(--s3);
+}
+.debug-all,
+.debug-all * {
+  background: rgba(0,0,0,0.05);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.75);
+  color: rgba(0,0,0,0.75);
+}
 .debug,
-.debug * {
+.debug >* {
   background: rgba(0,0,0,0.05);
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.75);
   color: rgba(0,0,0,0.75);
