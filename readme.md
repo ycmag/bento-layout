@@ -3,6 +3,7 @@
 我是一个 CSS，可以让元素像在 Sketch 里一样对齐父元素。尤其是中间对齐。
 
 20180305 更新：现在还有两种 layout 可以选。呵呵。屌不屌。
+20180306 更新：增加了 gridflow, scroll, sticky, padding
 
 # Start
 
